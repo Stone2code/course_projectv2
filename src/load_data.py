@@ -16,4 +16,4 @@ if __name__ == "__main__":
  def fib_mgx(position:int):
     if position <= 1:
         return position
-    return fib(position - 1) + fib(position - 2)
+    return fib_mgx(position - 1) + fib_mgx(position - 2)

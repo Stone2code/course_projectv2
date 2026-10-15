@@ -9,6 +9,6 @@ def load_data(path: str) -> pd.DataFrame:
  The loaded data.
  """
 
- return pd.read_csv(path, sep=",")
+ return pd.read_csv(path, sep=",", encoding="utf-8-sig")
 if __name__ == "__main__":
  print(load_data(sys.argv[1]).head())
